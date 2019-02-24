@@ -32,6 +32,6 @@ Alternatively you can install the dependencies and access the notebook using <a 
 
 	docker built -t recommend .
 
-Followed by running the caommand container:
+Followed by running the command container:
 
 	docker run -p 8888:8888 -t recommend
