@@ -14,7 +14,7 @@ Collaborative filtering is a method of recommending products to customers using 
 The data we will use comes from <a href="https:amazon.com">Amazon</a> and can be found <a href="http://jmcauley.ucsd.edu/data/amazon/">here</a>.  I chose the Amazon Instant Video 5 core file. The 5 core implies that each video/item has atleast 5 ratings and each users has rated atleast 5 videos/items.
 
 ## Requirements
-1. <a href="https://www.python.org/"> Python</a> (2.7)
+1. <a href="https://www.python.org/"> Python</a> (3.X)
 2. <a href="http://jupyter.org/">Jupyter Notebook</a>
 3. <a href="http://www.numpy.org/">NumPy</a>
 4. <a href="http://www.scipy.org/">SciPy</a>
@@ -23,6 +23,15 @@ The data we will use comes from <a href="https:amazon.com">Amazon</a> and can be
 7. <a href="http://scikit-learn.org/stable/">scikit learn</a>
 8. <a href="http://seaborn.pydata.org/">Seaborn</a>
 
-To install the requirements with pip (except for Python), type in the main directory:
+To install the requirements with pip (except for Python and Jupyter notebooks), type in the main directory:
 
 	pip install -r requirements.txt 
+
+Alternatively you can install the dependencies and access the notebook using <a href="https://www.docker.com/">Docker</a> by building the Docker image with the following:
+
+
+	docker built -t recommend .
+
+Followed by running the caommand container:
+
+	docker run -p 8888:8888 -t recommend
