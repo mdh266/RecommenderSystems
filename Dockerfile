@@ -1,4 +1,4 @@
-# Copyright (c) Mike Harmon.
+ # Copyright (c) Mike Harmon.
 # Distributed under the terms of the Modified BSD License.
 
 FROM jupyter/base-notebook
@@ -38,8 +38,9 @@ RUN mkdir /home/$NB_USER/recommender/  \
 
 COPY reviews_Amazon_Instant_Video_5.json.gz    /home/$NB_USER/recommender/
 COPY Recommender.ipynb                         /home/$NB_USER/recommender/
-COPY images/table.jpg                          /home/$NB_USER/recommender/images/
+COPY images/table.jpg                          /home/$NB_USER/recommender/images/table.jpg
 COPY requirements.txt                          /home/$NB_USER/recommender/
+COPY readFunctions.py                          /home/$NB_USER/recommender/
 
 
 
