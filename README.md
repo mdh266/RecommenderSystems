@@ -30,7 +30,7 @@ To install the requirements with pip (except for Python and Jupyter notebooks), 
 Alternatively you can install the dependencies and access the notebook using <a href="https://www.docker.com/">Docker</a> by building the Docker image with the following:
 
 
-	docker built -t recommend .
+	docker build -t recommend .
 
 Followed by running the caommand container:
 
